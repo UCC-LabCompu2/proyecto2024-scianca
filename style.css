@@ -22,8 +22,11 @@
     align-items: center;
 
 }
-.fondo{
+.fondo-index{
     background-color: #f3f3f3;
+}
+.fondo-pagina{
+    background-color: #4f6056;
 }
 .boton{
     background-color: #f3e8be;
@@ -33,4 +36,35 @@
     font-weight: 400;
     font-style: normal;
     text-align: center;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+main {
+    margin-top: 20px;
+    padding: 20px;
+}
+.enlaces{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.subtitulos{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+table{
+    width: 100%;
+    border: 1px solid #db9d67;
+}
+th, td{
+    width: 75%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #db9d67;
 }
