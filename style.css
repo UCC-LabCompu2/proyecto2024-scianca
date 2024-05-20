@@ -1,0 +1,36 @@
+
+.centrar-texto {
+    text-align: center;
+}
+#principal{
+    width: 100px;
+    float: left;
+    border-radius: 100%;
+}
+.login-box{
+    border: 2px solid #db9d67;
+    margin: 50px 25px;
+    padding: 10px 5px;
+    box-shadow: 10px 10px rgb(225, 197, 146);
+    text-align: center;
+    background-color: #a3ae84;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.fondo{
+    background-color: #f3f3f3;
+}
+.boton{
+    background-color: #f3e8be;
+}
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}

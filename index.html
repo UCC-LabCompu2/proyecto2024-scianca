@@ -2,44 +2,45 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<title>Inicio de sesion a PasionFlyPatagonia</title>
-<style>
-    form{
-        width: 70%;
-    }
-
-</style>
+    <meta charset="UTF-8">
+    <title>Inicio de sesion a PasionFlyPatagonia</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="Imagenes/Truchalogo2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
-<body>
-<h3>Inicie sesion a la mejor plataforma de informacion sobre pesca con mosca!</h3>
 
-<div>
-    <form>
-        <div class="form-group">
-            <label for="input_nombre">Nombre:</label>
-            <input type="text" class="form-control" id="input_nombre" aria-describedby="nombre" placeholder="Ingrese su Nombre">
-        </div>
+<body class="fondo">
 
-
-        <div class="form-group">
-            <label for="input_apellido">Apellido:</label>
-            <input type="text" class="form-control" id="input_apellido" aria-describedby="apellido" placeholder="Ingrese su Apellido">
-        </div>
-        <div class="form-group">
-            <label for="input_nombre">Email:</label>
-            <input type="email" class="form-control" id="input_email" aria-describedby="email" placeholder="Ingrese su email">
-        </div>
-        <div class="form-group">
-            <label for="input_password">Password:</label>
-            <input type="password" class="form-control" id="input_password" aria-describedby="password" placeholder="Ingrese su Contraseña">
-        </div>
-        <div class="form-group">
-            <label for="input_conf-password">Confirmar Password:</label>
-            <input type="password" class="form-control" id="input_conf-password" aria-describedby="confirmar password" placeholder="Confirmar Contraseña">
-        </div>
-    </form>
-</div>
+    <img id="principal" src="Imagenes/Truchalogo2.png">
+    <h2 class="poetsen-one-regular">PasionFlyPatagonia</h2>
+    <h3 class="centrar-texto">Inicie sesión para obtener información básica sobre pesca con mosca!</h3>
+    <div class="container">
+        <form class="login-box">
+            <div>
+                <label for="input_nombre">Nombre:</label>
+                <input type="text" class="form-control" id="input_nombre" aria-describedby="nombre" placeholder="Ingrese su Nombre">
+            </div>
+            <div>
+                <label for="input_apellido">Apellido:</label>
+                <input type="text" class="form-control" id="input_apellido" aria-describedby="apellido" placeholder="Ingrese su Apellido">
+            </div>
+            <div>
+                <label for="input_nombre">Email:</label>
+                <input type="email" class="form-control" id="input_email" aria-describedby="email" placeholder="Ingrese su email">
+            </div>
+                <label for="input_password">Password:</label>
+                <input type="password" class="form-control" id="input_password" aria-describedby="password" placeholder="Ingrese su Contraseña">
+            <div>
+                <label for="input_conf-password">Confirmar Password:</label>
+                <input type="password" class="form-control" id="input_conf-password" aria-describedby="confirmar password" placeholder="Confirmar Contraseña">
+            </div>
+        </form>
+        <form action="Pagina-Principal.html">
+            <button type="submit" class="boton">Iniciar Sesión</button>
+        </form>
+    </div>
 
 
 
