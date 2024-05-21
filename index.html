@@ -39,27 +39,40 @@
                 <label for="input_conf-password">Confirmar Password:</label>
                 <input type="password" class="form-control" id="input_conf-password" aria-describedby="confirmar password" placeholder="Confirmar Contraseña">
             </div>
+            <div>
+                <p>Introduce tu fecha de nacimiento:</p>
+                <input type="date" id="dob">
+                <button onclick="calculateAge()" class="boton">Calcular Edad</button>
+                <div class="result" id="result"></div>
+            </div>
         </form>
         <form action="Pagina-Principal.html">
             <button type="submit" class="boton">Iniciar Sesión</button>
         </form>
     </div>
+    <script>
+        function calculateAge() {
+            const dobInput = document.getElementById('dob').value;
+            if (dobInput === '') {
+                alert('Por favor, introduce tu fecha de nacimiento.');
+                return;
+            }
 
+            const dob = new Date(dobInput);
+            const today = new Date();
 
+            let age = today.getFullYear() - dob.getFullYear();
+            const monthDifference = today.getMonth() - dob.getMonth();
+            if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < dob.getDate())) {
+                age--;
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+            document.getElementById('result').innerText = `Tu edad es: ${age} años`;
+        }
+    </script>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
 </body>
 
 
